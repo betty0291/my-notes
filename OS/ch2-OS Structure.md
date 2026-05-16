@@ -16,7 +16,6 @@
     - 藉由system call create shared memory的空間
     - 缺點deadlock、sychronization
 
-
 ## **OS-Application Interface**
 
 ### **System Call & API**
@@ -28,6 +27,7 @@
     - An API call could invove **zero or multiple system call**. 
     - ex.1 Both `malloc()` and `free()` use system call `brk()`(兩個不同的function call, call 同一個system call) 
     - ex.2 Ｍath API functions, such as `abs()`, don't need to invovle system call.
+    ![Standard C Libray Example](image.png)
     - **Java API** -> Java virtual machine(**JVM**)
  - Why use API ? Simpicity, Portability, Efficiency. 
 
